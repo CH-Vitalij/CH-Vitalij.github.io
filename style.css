@@ -209,6 +209,14 @@
   margin-right: 8px;
 }
 
+.content__image {
+  flex: 1 1 auto;
+}
+
+.content__pic {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .header__upper-menu {
     justify-content: space-around;
