@@ -311,6 +311,10 @@
     flex-wrap: wrap;
   }
 
+  .slide-menu__button {
+    padding: 8px 25px;
+  }
+
   .slide-menu__button-5,
   .slide-menu__button-6 {
     flex: 0 1 auto;
