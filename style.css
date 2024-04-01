@@ -257,7 +257,6 @@
     margin-right: 40px;
   }
 
-  /*картинка не будет больше 360px*/
   .content__image .content__pic {
     max-width: 100%;
   }
@@ -310,5 +309,11 @@
   .slide-menu__button-5,
   .slide-menu__button-6 {
     flex: 0 1 auto;
+  }
+
+  .content__item {
+    flex: 1 1 490px;
+    margin-right: 48px;
+    margin-left: 24px;
   }
 }
