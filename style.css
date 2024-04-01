@@ -210,11 +210,6 @@
 }
 
 @media (min-width: 768px) {
-  .header__upper-menu {
-    justify-content: space-around;
-    column-gap: 16px;
-  }
-
   .upper-menu__item-1 {
     padding-left: 24px;
     padding-right: 26.73px;
