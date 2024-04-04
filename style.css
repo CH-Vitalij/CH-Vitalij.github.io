@@ -265,13 +265,9 @@
     align-items: center;
     background-color: #ffffff;
     column-gap: 32px;
-    height: 88px;
     margin: 0;
     padding: 0;
-    padding-right: 16px;
-    box-shadow: inset 0 -3px 0 -1px #d9fff5;
     align-items: baseline;
-    height: auto;
   }
 
   .upper-menu__item {
