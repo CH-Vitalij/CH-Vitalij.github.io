@@ -291,9 +291,12 @@
     padding: 8px 25px;
   }
 
+  .content__row {
+    column-gap: 36px;
+  }
+
   .content__item {
     flex: 1 1 490px;
-    margin-right: 48px;
     margin-left: 24px;
   }
 
