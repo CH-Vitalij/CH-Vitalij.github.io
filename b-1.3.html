@@ -19,37 +19,10 @@
   </head>
   <body class="page">
     <div class="wrapper">
-      <div class="flex-container">
-        <h1 class="title body__title body__title_size_m">
-          <span class="highlight"></span>Услуги и сервисы
-        </h1>
-        <ul class="upper-menu header__upper-menu upper-menu__shadow">
-          <li class="upper-menu__item upper-menu__item-7">
-            Оставить заявку
-            <img
-              class="upper-menu__img"
-              src="icons\repair.png"
-              alt="Оставить заявку"
-              width="40"
-              height="40"
-            />
-          </li>
-          <li class="upper-menu__item upper-menu__item-8">
-            Статус ремонта
-            <img
-              class="upper-menu__img"
-              src="icons\checkstatus.png"
-              alt="Статус ремонта"
-              width="40"
-              height="40"
-            />
-          </li>
-        </ul>
-      </div>
-      <header class="header">
+      <header class="header page__header">
         <div class="container container--responsive">
           <ul class="upper-menu header__upper-menu">
-            <li class="upper-menu__burger">
+            <li class="upper-menu__item upper-menu__item--type--burger">
               <img
                 class="upper-menu__img"
                 src="icons\burger.png"
@@ -58,7 +31,7 @@
                 height="40"
               />
             </li>
-            <li class="upper-menu__group">
+            <li class="upper-menu__item upper-menu__item--type--group">
               <img
                 class="upper-menu__img"
                 src="icons\Group.png"
@@ -67,7 +40,7 @@
                 height="50.81"
               />
             </li>
-            <li class="upper-menu__call" hidden>
+            <li class="upper-menu__item upper-menu__item--type--call" hidden>
               <img
                 class="upper-menu__img"
                 src="icons\call.png"
@@ -76,7 +49,7 @@
                 height="40"
               />
             </li>
-            <li class="upper-menu__chat" hidden>
+            <li class="upper-menu__item upper-menu__item--type--chat" hidden>
               <img
                 class="upper-menu__img"
                 src="icons\chat.png"
@@ -85,7 +58,7 @@
                 height="40"
               />
             </li>
-            <li class="upper-menu__profile" hidden>
+            <li class="upper-menu__item upper-menu__item--type--profile" hidden>
               <img
                 class="upper-menu__img"
                 src="icons\profile.png"
@@ -94,7 +67,7 @@
                 height="40"
               />
             </li>
-            <li class="upper-menu__divider">
+            <li class="upper-menu__item upper-menu__item--type--divider">
               <img
                 class="upper-menu__img"
                 src="icons\divider.png"
@@ -103,7 +76,7 @@
                 height="32"
               />
             </li>
-            <li class="upper-menu__repair">
+            <li class="upper-menu__item upper-menu__item--type--repair">
               <img
                 class="upper-menu__img"
                 src="icons\repair.png"
@@ -112,7 +85,7 @@
                 height="40"
               />
             </li>
-            <li class="upper-menu__checkstatus">
+            <li class="upper-menu__item upper-menu__item--type--checkstatus">
               <img
                 class="upper-menu__img"
                 src="icons\checkstatus.png"
@@ -126,41 +99,41 @@
       </header>
       <main class="body">
         <div class="container container--responsive">
-          <h1 class="title body__title body__title_hidden body__title-size-m">
-            <span class="highlight"></span>Услуги и сервисы
-          </h1>
+          <header class="header body__header">
+              <h1 class="title body__title">Услуги и сервисы</h1>
+              <ul class="upper-menu header__upper-menu-1">
+                <li class="upper-menu__item upper-menu__item--type--repair">
+                  Оставить заявку
+                  <img
+                    class="upper-menu__img"
+                    src="icons\repair.png"
+                    alt="Оставить заявку"
+                    width="40"
+                    height="40"
+                  />
+                </li>
+                <li
+                  class="upper-menu__item upper-menu__item--type--checkstatus"
+                >
+                  Статус ремонта
+                  <img
+                    class="upper-menu__img"
+                    src="icons\checkstatus.png"
+                    alt="Статус ремонта"
+                    width="40"
+                    height="40"
+                  />
+                </li>
+              </ul>
+          </header>
           <nav class="slide-menu body__slide-menu">
-            <div class="fadecopy"></div>
-            <button
-              class="slide-menu__button slide-menu__button-1 slide-menu__button_size_m"
-            >
-              Ремонтируемые устройства
-            </button>
-            <button
-              class="slide-menu__button slide-menu__button-2 slide-menu__button_size_m"
-            >
-              Дополнительные услуги
-            </button>
-            <button
-              class="slide-menu__button slide-menu__button-3 slide-menu__button_size_m"
-            >
-              Цены на услуги
-            </button>
-            <button
-              class="slide-menu__button slide-menu__button-4 slide-menu__button_size_m"
-            >
-              Адреса сервисных центров
-            </button>
-            <button
-              class="slide-menu__button slide-menu__button-5 slide-menu__button_size_m"
-            >
-              Специальные цены
-            </button>
-            <button
-              class="slide-menu__button slide-menu__button-6 slide-menu__button_size_m"
-            >
-              Отзывы
-            </button>
+            <div class="slide-menu__fadecopy"></div>
+            <button class="slide-menu__button">Ремонтируемые устройства</button>
+            <button class="slide-menu__button">Дополнительные услуги</button>
+            <button class="slide-menu__button">Цены на услуги</button>
+            <button class="slide-menu__button">Адреса сервисных центров</button>
+            <button class="slide-menu__button">Специальные цены</button>
+            <button class="slide-menu__button">Отзывы</button>
           </nav>
         </div>
         <article class="content body__content">
@@ -169,15 +142,14 @@
               <div class="content__item">
                 <input
                   type="checkbox"
-                  class="content__read-more-state"
+                  class="content__read-more--state"
                   id="post-1"
                 />
                 <div class="excerpt content__excerpt">
                   <p class="text text__size">
-                    Мы являемся авторизованным<br />
-                    сервисным центром по ремонту техники Dell. Только у нас вы
-                    можете отремонтировать свой ноутбук Dell с официальной
-                    гарантией производителя.
+                    Мы являемся авторизованным сервисным центром по ремонту
+                    техники Dell. Только у нас вы можете отремонтировать свой
+                    ноутбук Dell с официальной гарантией производителя.
                   </p>
                   <p class="text text__size">
                     Мы успешно работаем с 1992 года и заслужили репутацию
@@ -192,7 +164,7 @@
                   </p>
                 </div>
                 <label
-                  class="label content__label content__label-size-m content__read-more-trigger"
+                  class="label content__label content__read-more--trigger"
                   for="post-1"
                 >
                   <img

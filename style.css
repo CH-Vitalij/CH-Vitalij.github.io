@@ -24,19 +24,13 @@
   margin: 0 auto;
 }
 
-.flex-container {
+.header__upper-menu-1 {
   display: none;
-}
-
-.upper-menu__item {
-  width: 40px;
-  height: 40px;
 }
 
 .header__upper-menu {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
   column-gap: 16px;
@@ -48,13 +42,18 @@
   box-shadow: inset 0 -3px 0 -1px #d9fff5;
 }
 
-.upper-menu__group {
+.upper-menu__item {
+  width: 40px;
+  height: 40px;
+}
+
+.upper-menu__item--type--group {
   flex: 1 1 auto;
   width: 96.55px;
   height: 50.81px;
 }
 
-.upper-menu__divider {
+.upper-menu__item--type--divider {
   width: 2px;
   height: 32px;
 }
@@ -68,11 +67,10 @@
   margin: 0;
   margin-top: 24px;
   margin-bottom: 24px;
+  padding-left: 12px;
   max-width: 304px;
   white-space: nowrap;
-}
-
-.body__title-size-m {
+  border-left: 4px solid #41f6d7;
   font-weight: bold;
   font-size: 28px;
   line-height: 40px;
@@ -80,16 +78,7 @@
   text-align: left;
 }
 
-.highlight {
-  display: inline-block;
-  width: 4px;
-  height: 40px;
-  margin-right: 12px;
-  background: #41f6d7;
-  vertical-align: top;
-}
-
-.fadecopy {
+.slide-menu__fadecopy {
   position: fixed;
   width: 24px;
   height: 40px;
@@ -115,21 +104,23 @@
   padding-bottom: 8px;
   padding-right: 16px;
   padding-left: 16px;
-  flex: 1 1 auto;
-}
-
-.slide-menu__button:focus {
-  border-radius: 6px;
-  border: 2px solid #b8ffec;
-}
-
-.slide-menu__button_size_m {
+  flex: 0 1 auto;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
   color: #7e7e82;
   white-space: nowrap;
+}
+
+.slide-menu__button:hover {
+  border-radius: 6px;
+  border: 2px solid #b8ffec;
+}
+
+.slide-menu__button:focus {
+  border-radius: 6px;
+  border: 2px solid #b8ffec;
 }
 
 .content__row {
@@ -150,36 +141,33 @@
   overflow-y: hidden;
 }
 
-.content__read-more-state {
+.content__read-more--state {
   display: none;
 }
 
-.content__read-more-state:checked ~ .content__excerpt {
+.content__read-more--state:checked ~ .content__excerpt {
   max-height: 100%;
   overflow-y: visible;
 }
 
-.content__read-more-trigger::after {
+.content__read-more--trigger::after {
   content: "Читать далее";
 }
 
-.content__read-more-state:checked ~ .content__read-more-trigger::after {
+.content__read-more--state:checked ~ .content__read-more--trigger::after {
   content: "Свернуть";
 }
 
 .text__size {
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.20000000298023224px;
+  letter-spacing: 0.31px;
   margin-top: 0;
 }
 
 .content__label {
   display: inline-block;
   width: 132px;
-}
-
-.content__label-size-m {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
@@ -201,22 +189,18 @@
 }
 
 @media (min-width: 768px) {
-  .upper-menu__item-1 {
+  .header__upper-menu {
     padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .upper-menu__item--type--burger {
     padding-right: 26.73px;
   }
 
-  .upper-menu__item-2 {
-    flex: 1 1 auto;
-  }
-
-  .upper-menu__item-6 {
+  .upper-menu__item--type--divider {
     padding-left: 4px;
     padding-right: 4px;
-  }
-
-  .upper-menu__item-8 {
-    padding-right: 24px;
   }
 
   .upper-menu__item[hidden] {
@@ -229,11 +213,12 @@
 
   .content__row {
     flex-wrap: nowrap;
+    column-gap: 48px;
   }
 
   .content__item {
     flex: 1 1 312px;
-    margin-right: 48px;
+    margin: 0;
     margin-left: 24px;
   }
 
@@ -250,23 +235,21 @@
 
   .content__image .content__pic {
     max-width: 100%;
+    border-radius: 6px;
   }
 }
 
 @media (min-width: 992px) {
-  .header {
+  .page__header {
     display: none;
   }
 
-  .body__title_hidden {
-    display: none;
-  }
-
-  .flex-container {
+  .body__header {
     display: flex;
     margin-top: 42px;
     margin-bottom: 8px;
     height: 40px;
+    margin-right: 25px;
   }
 
   .body__title {
@@ -276,7 +259,17 @@
     align-self: baseline;
   }
 
-  .header__upper-menu {
+  .header__upper-menu-1 {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    background-color: #ffffff;
+    column-gap: 16px;
+    height: 88px;
+    margin: 0;
+    padding: 0;
+    padding-right: 16px;
+    box-shadow: inset 0 -3px 0 -1px #d9fff5;
     align-items: baseline;
     height: auto;
   }
@@ -296,11 +289,6 @@
 
   .slide-menu__button {
     padding: 8px 25px;
-  }
-
-  .slide-menu__button-5,
-  .slide-menu__button-6 {
-    flex: 0 1 auto;
   }
 
   .content__item {
