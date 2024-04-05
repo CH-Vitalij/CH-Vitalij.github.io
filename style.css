@@ -214,7 +214,7 @@
 
   .body__slide-menu {
     margin-bottom: 32px;
-    margin-left: 32px;
+    margin-left: 24px;
   }
 
   .content__row {
@@ -246,6 +246,11 @@
 }
 
 @media (min-width: 992px) {
+  .container--responsive {
+    max-width: 1121px;
+    margin: 0 auto;
+  }
+
   .page__header {
     display: none;
   }
