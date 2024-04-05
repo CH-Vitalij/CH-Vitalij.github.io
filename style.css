@@ -293,6 +293,7 @@
 
   .body__slide-menu {
     flex-wrap: wrap;
+    overflow-x: visible;
   }
 
   .slide-menu__button {
