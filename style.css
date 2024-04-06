@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 
-.container--responsive {
+.container {
   min-width: 320px;
   margin: 0 auto;
 }
@@ -252,7 +252,7 @@
 }
 
 @media (min-width: 992px) {
-  .container--responsive {
+  .container {
     max-width: 1121px;
     margin: 0 auto;
   }
