@@ -90,6 +90,12 @@
   );
 }
 
+@media (min-width: 992px) {
+  .slide-menu__fadecopy {
+    display: none;
+  }
+}
+
 .body__slide-menu {
   display: flex;
   position: relative;
