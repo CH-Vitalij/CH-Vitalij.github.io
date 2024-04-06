@@ -89,9 +89,11 @@
       </header>
       <main class="body">
         <div class="container">
-          <header class="header body__header">
-            <h1 class="title body__title">Услуги и сервисы</h1>
-            <ul class="upper-menu header__upper-menu-1">
+          <header class="body__header header">
+            <h1 class="body__title title">Услуги и сервисы</h1>
+            <ul
+              class="header__upper-menu header__upper-menu--hidden header__upper-menu--unhidden upper-menu"
+            >
               <li class="upper-menu__item upper-menu__item--type--repair">
                 Оставить заявку
                 <img
@@ -114,7 +116,7 @@
               </li>
             </ul>
           </header>
-          <nav class="slide-menu body__slide-menu">
+          <nav class="body__slide-menu slide-menu">
             <div class="slide-menu__fadecopy"></div>
             <button class="slide-menu__button">Ремонтируемые бренды</button>
             <button class="slide-menu__button">Ремонтируемые устройства</button>
@@ -128,11 +130,7 @@
           <div class="container">
             <div class="content__row">
               <div class="content__item">
-                <input
-                  type="checkbox"
-                  class="content__read-more content__read-more--state"
-                  id="post-1"
-                />
+                <input type="checkbox" class="content__read-more" id="post-1" />
                 <div class="content__excerpt excerpt">
                   <p class="text__size text">
                     Мы являемся авторизованным сервисным центром по ремонту
@@ -147,10 +145,7 @@
                     близким.
                   </p>
                 </div>
-                <label
-                  class="content__label label"
-                  for="post-1"
-                >
+                <label class="content__label label" for="post-1">
                   <img
                     class="content__img"
                     src="icons\icon.png"
