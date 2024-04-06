@@ -108,7 +108,7 @@
   border: white;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 16px;
+  /* padding-right: 16px; */
   padding-left: 16px;
   flex: 0 1 auto;
   font-weight: normal;
@@ -296,10 +296,13 @@
 
   .body__slide-menu {
     flex-wrap: wrap;
+    max-width: 1063px;
+    max-height: 82px;
   }
 
   .slide-menu__button {
-    padding: 8px 25px;
+    padding-left: 22.5px;
+    padding-right: 23.1px;
   }
 
   .content__row {
