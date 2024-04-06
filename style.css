@@ -88,7 +88,7 @@
 }
 
 .slide-menu__fadecopy {
-  position: absolute;
+  position: fixed;
   width: 24px;
   height: 40px;
   right: 0;
@@ -99,11 +99,11 @@
   );
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .slide-menu__fadecopy {
     display: none;
   }
-} */
+}
 
 .slide-menu__button {
   border: white;
