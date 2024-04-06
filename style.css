@@ -121,10 +121,7 @@
   background-color: #f8f8f8;
 }
 
-.slide-menu__button:hover {
-  box-shadow: inset 0 0 0 2px #b8ffec;
-}
-
+.slide-menu__button:hover,
 .slide-menu__button:focus {
   box-shadow: inset 0 0 0 2px #b8ffec;
 }
