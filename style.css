@@ -148,16 +148,16 @@
   display: none;
 }
 
-.content__read-more--state:checked ~ .content__excerpt {
+.content__read-more:checked ~ .content__excerpt {
   max-height: 100%;
   overflow-y: visible;
 }
 
-.content__label--trigger::after {
+.content__label::after {
   content: "Читать далее";
 }
 
-.content__read-more--state:checked ~ .content__label--trigger::after {
+.content__read-more:checked ~ .content__label::after {
   content: "Свернуть";
 }
 
