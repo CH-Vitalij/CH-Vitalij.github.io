@@ -39,7 +39,7 @@
   box-shadow: inset 0 -3px 0 -1px #d9fff5;
 }
 
-.header__upper-menu--hidden {
+.header__upper-menu_hidden {
   display: none;
 }
 
@@ -273,7 +273,7 @@
     padding-left: 30px;
   }
 
-  .header__upper-menu--unhidden {
+  .header__upper-menu_unhidden {
     display: flex;
   }
 
