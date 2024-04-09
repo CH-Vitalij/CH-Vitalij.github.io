@@ -1,9 +1,9 @@
 @font-face {
   font-family: "TT Lakes Medium";
   src: url("TTLakes-Medium.eot");
-  src: url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("TTLakes-Medium.woff") format("woff"),
-    url("TTLakes-Medium.ttf") format("truetype");
+  src: local('TT Lakes Medium')
+    url(/font/TTLakes-Medium.woff) format('woff'),
+    url(/font/TTLakes-Medium.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -146,7 +146,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
-  letter-spacing: 0.4px;
+  letter-spacing: -0.2px;
 }
 
 .content__row {
@@ -328,11 +328,11 @@ html {
 
   .slide-menu__service {
     flex-wrap: wrap;
-    margin-left: -3px;
+    max-width: 1063px;
   }
 
   .slide-menu__link {
-    letter-spacing: 0.55px;
+    letter-spacing: 0.23px;
   }
 
   .slide-menu__button {
