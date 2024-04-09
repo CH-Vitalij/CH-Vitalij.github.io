@@ -8,6 +8,19 @@
   font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: inherit;
+}
+
 .page {
   margin: 0;
   font-family: "TT Lakes Medium", sans-serif;
@@ -81,11 +94,16 @@
 }
 
 .body__slide-menu {
-  display: flex;
-  position: relative;
-  margin-left: 16px;
   margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+.slide-menu__service {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   overflow-x: auto;
+  list-style: none;
 }
 
 .slide-menu__fadecopy {
@@ -106,26 +124,29 @@
   }
 }
 
-.slide-menu__button {
+.slide-menu__item {
   border: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 16px;
-  padding-left: 16px;
   flex: 0 1 auto;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.20000000298023224px;
-  color: #7e7e82;
-  white-space: nowrap;
   border-radius: 6px;
   background-color: #ffffff;
+  list-style: none;
+  vertical-align: baseline;
 }
 
-.slide-menu__button:hover,
-.slide-menu__button:focus {
+.slide-menu__item:hover,
+.slide-menu__item:focus {
   box-shadow: inset 0 0 0 2px #b8ffec;
+}
+
+.slide-menu__link {
+  white-space: nowrap;
+  display: inline-block;
+  color: #7e7e82;
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  letter-spacing: 0.4px;
 }
 
 .content__row {
@@ -210,8 +231,9 @@
   }
 
   .body__title {
-    max-width: 257px;
+    max-width: 265px;
     padding-left: 20px;
+    margin-bottom: 32px;
   }
 
   .body__slide-menu {
@@ -282,6 +304,7 @@
     align-items: center;
     background-color: #ffffff;
     column-gap: 32px;
+    height: auto;
     margin: 0;
     padding: 0;
     align-items: baseline;
@@ -297,15 +320,22 @@
   }
 
   .body__slide-menu {
+    max-width: 1063px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+  }
+
+  .slide-menu__service {
     flex-wrap: wrap;
-    /* max-width: 1063px; */
-    /* max-height: 82px; */
+    margin-left: -3px;
+  }
+
+  .slide-menu__link {
+    letter-spacing: 0.55px;
   }
 
   .slide-menu__button {
     padding: 8px 25px;
-    /* padding-left: 22.5px;
-    padding-right: 23.1px; */
   }
 
   .content__row {
