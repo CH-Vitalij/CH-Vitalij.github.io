@@ -8,6 +8,16 @@
   font-style: normal;
 }
 
+/* @font-face {
+  font-family: "TT Lakes Medium";
+  src: url("TTLakes-Medium.eot");
+  src: local('TT Lakes Medium')
+    url(/font/TTLakes-Medium.woff) format('woff'),
+    url(/font/TTLakes-Medium.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+} */
+
 html {
   box-sizing: border-box;
 }
@@ -222,8 +232,8 @@ html {
 
   .page__header .upper-menu__item:nth-child(2),
   .upper-menu__item:nth-child(7) {
-    padding-left: 4px;
-    padding-right: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .upper-menu__item[hidden] {
