@@ -273,7 +273,7 @@ html {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 1121px;
+    max-width: 1120px;
     margin: 0 auto;
   }
 
@@ -322,14 +322,13 @@ html {
   }
 
   .body__slide-menu {
-    max-width: 1063px;
+    margin-right: 25px;
     margin-left: 32px;
     margin-bottom: 16px;
   }
 
   .slide-menu__service {
     flex-wrap: wrap;
-    max-width: 1063px;
   }
 
   .slide-menu__link {
