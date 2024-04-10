@@ -41,7 +41,7 @@ html {
   display: flex;
   list-style-type: none;
   align-items: center;
-  background-color: #ffffff;
+  background-color: transparent;
   column-gap: 16px;
   height: 88px;
   margin: 0;
@@ -302,7 +302,7 @@ html {
   .header__upper-menu {
     list-style-type: none;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     column-gap: 32px;
     height: auto;
     margin: 0;
