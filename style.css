@@ -23,7 +23,6 @@ html {
 .page {
   margin: 0;
   font-family: "TT Lakes Medium", sans-serif;
-  background-color: #f8f8f8;
 }
 
 .wrapper {
@@ -41,7 +40,6 @@ html {
   display: flex;
   list-style-type: none;
   align-items: center;
-  background-color: transparent;
   column-gap: 16px;
   height: 88px;
   margin: 0;
@@ -75,6 +73,10 @@ html {
 .upper-menu__img {
   max-width: 100%;
   height: auto;
+}
+
+.body {
+  background-color: #f8f8f8;
 }
 
 .body__title {
@@ -302,7 +304,6 @@ html {
   .header__upper-menu {
     list-style-type: none;
     align-items: center;
-    background-color: #f8f8f8;
     column-gap: 32px;
     height: auto;
     margin: 0;
