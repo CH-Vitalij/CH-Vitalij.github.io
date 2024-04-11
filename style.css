@@ -152,7 +152,6 @@ html {
 .slide-menu__item {
   border: white;
   flex: 0 1 auto;
-  border-radius: 6px;
   list-style: none;
   vertical-align: baseline;
 }
@@ -172,6 +171,7 @@ html {
   line-height: 24px;
   text-decoration: none;
   letter-spacing: -0.2px;
+  border-radius: 6px;
   outline: none;
 }
 
