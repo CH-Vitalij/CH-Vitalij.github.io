@@ -1,8 +1,27 @@
 @font-face {
   font-family: "TT Lakes Medium";
-  src: url("TTLakes-Medium.eot");
-  src: local("TT Lakes Medium") url(/font/TTLakes-Medium.woff) format("woff"),
-    url(/font/TTLakes-Medium.ttf) format("truetype");
+  src: url("/fonts/TTLakes-Medium.eot");
+  src: local("TT Lakes Medium") url("/fonts/TTLakes-Medium.woff") format("woff"),
+    url("/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("/fonts/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold") url("/fonts/TTLakes-Bold.woff") format("woff"),
+    url("/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("/fonts/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular") url("/fonts/TTLakes-Regular.woff")
+      format("woff"),
+    url("/fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +42,7 @@ html {
 .page {
   margin: 0;
   font-family: "TT Lakes Medium", sans-serif;
+  background-color: #f8f8f8;
 }
 
 .wrapper {
@@ -36,10 +56,13 @@ html {
   margin: 0 auto;
 }
 
-.header__upper-menu {
+.upper-menu {
   display: flex;
-  list-style-type: none;
   align-items: center;
+}
+
+.page__header .header__upper-menu {
+  background-color: #ffffff;
   column-gap: 16px;
   height: 88px;
   margin: 0;
@@ -75,8 +98,15 @@ html {
   height: auto;
 }
 
-.body {
-  background-color: #f8f8f8;
+.title {
+  font-family: "TT Lakes Bold", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  white-space: nowrap;
+  border-left: 4px solid #41f6d7;
+  letter-spacing: -0.6px;
+  text-align: left;
 }
 
 .body__title {
@@ -85,13 +115,6 @@ html {
   margin-bottom: 24px;
   padding-left: 12px;
   max-width: 304px;
-  white-space: nowrap;
-  border-left: 4px solid #41f6d7;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -0.6000000238418579px;
-  text-align: left;
 }
 
 .body__slide-menu {
@@ -185,20 +208,30 @@ html {
   content: "Свернуть";
 }
 
-.text__size {
+.text {
+  font-family: "TT Lakes Regular", sans-serif;
   font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.31px;
-  margin-top: 0;
-  margin-bottom: 16px;
+  letter-spacing: 0.2px;
 }
 
-.content__label {
+.text__size {
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .text__size {
+    line-height: 20px;
+  }
+}
+
+.label {
   display: inline-block;
   width: 132px;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.20000000298023224px;
+  letter-spacing: -0.2px;
   text-align: left;
   text-decoration: none;
   color: black;
@@ -293,7 +326,6 @@ html {
     flex: 1 1 auto;
     margin: 0;
     max-width: 100%;
-    align-self: baseline;
     padding-left: 30px;
   }
 
@@ -302,13 +334,10 @@ html {
   }
 
   .header__upper-menu {
-    list-style-type: none;
-    align-items: center;
     column-gap: 32px;
     height: auto;
     margin: 0;
     padding: 0;
-    align-items: baseline;
     box-shadow: none;
   }
 
