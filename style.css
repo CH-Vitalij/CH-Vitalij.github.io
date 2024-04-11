@@ -61,6 +61,7 @@ html {
   align-items: center;
 }
 
+/*остальные свойства переопределяются*/
 .page__header .header__upper-menu {
   background-color: #ffffff;
   column-gap: 16px;
@@ -156,8 +157,8 @@ html {
   vertical-align: baseline;
 }
 
-.slide-menu__item:hover,
-.slide-menu__item:focus {
+.slide-menu__link:hover,
+.slide-menu__link:focus {
   box-shadow: inset 0 0 0 2px #b8ffec;
   background-color: #ffffff;
 }
@@ -171,6 +172,7 @@ html {
   line-height: 24px;
   text-decoration: none;
   letter-spacing: -0.2px;
+  outline: none;
 }
 
 .content__row {
