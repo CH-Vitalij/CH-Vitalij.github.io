@@ -59,18 +59,17 @@ html {
 .upper-menu {
   display: flex;
   align-items: center;
+  height: 88px;
+  box-shadow: inset 0 -3px 0 -1px #d9fff5;
+  background-color: #ffffff;
 }
 
-/*остальные свойства переопределяются*/
 .page__header .header__upper-menu {
-  background-color: #ffffff;
   column-gap: 16px;
-  height: 88px;
   margin: 0;
   padding: 0;
   padding-left: 16px;
   padding-right: 16px;
-  box-shadow: inset 0 -3px 0 -1px #d9fff5;
 }
 
 .header__upper-menu_hidden {
@@ -335,12 +334,16 @@ html {
     display: flex;
   }
 
+  .upper-menu {
+    height: auto;
+    box-shadow: none;
+    background-color: #f8f8f8;
+  }
+
   .header__upper-menu {
     column-gap: 32px;
-    height: auto;
     margin: 0;
     padding: 0;
-    box-shadow: none;
   }
 
   .body__header .upper-menu__item {
